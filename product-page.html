@@ -16,18 +16,18 @@
 
     <body>
 
-        <header>
+        <header tabindex="0">
 
             <div id="topnav-line">
-                <button id="openBtn" class="material-symbols-outlined" onclick="openNav()">&#xe5d2;</button>
+                <button id="openBtn" class="material-symbols-outlined" tabindex="1" onclick="openNav()">&#xe5d2;</button>
                 <a id="homeBtn" href="index.html"><h1>FRAM</h1></a>
                 <div class="cart-count"><a id="clicks">0</a></div>
             </div>
 
             <div id="mySidebar" class="sidebar">
-                <button id="closeBtn" href="javascript:void(0)" class="material-symbols-outlined" onclick="closeNav()">&#xe5cd;</button>
-                <a id="productNav" href="product-page.html">PRODUCTS</a>
-                <a id="chatNav" href="chatbot.html">CHAT</a>
+                <button id="closeBtn" href="javascript:void(0)" class="material-symbols-outlined" tabindex="4" onclick="closeNav()">&#xe5cd;</button>
+                <a id="productNav" href="product-page.html" tabindex="2">PRODUCTS</a>
+                <a id="chatNav" href="chatbot.html" tabindex="3">CHAT</a>
                 <a id="checkoutNav" href="checkout.html">CHECKOUT</a>
             </div>  
 
@@ -35,7 +35,7 @@
 
         <main>
 
-            <section id="produce-page-heading">
+            <section id="produce-page-heading" tabindex="4">
                 <h2>PRODUCE</h2>
                 <h4>Explore our selection of seasonal produce, sourced directly from local farms to ensure peak freshness and quality. Every item is chosen with care, supporting sustainable practices and bringing the best of the harvest to your table</h4> 
             </section>
@@ -48,7 +48,7 @@
 
                         <div class="img-container">
                             <img src="Oats-pic.jpg" alt="Pile of Oats">
-                            <button type="button" id="addToBasketBtn1" class="addToBasketBtn" onclick="myFunction('Oats', 48)">Add to basket&nbsp;<i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+                            <button type="button" id="addToBasketBtn1" class="addToBasketBtn" tabindex="5" onclick="myFunction('Oats', 48)">Add to basket&nbsp;<i class="fa fa-arrow-up" aria-hidden="true"></i></button>
                         </div>
                         
                         <div class="product-card-child">
@@ -64,7 +64,7 @@
 
                         <div class="img-container">
                             <img src="Red-onion-pic.jpg" alt="Pile of Red Onions">
-                            <button type="button" id="addToBasketBtn2" class="addToBasketBtn" onclick="myFunction('Red Onions', 24)">Add to basket&nbsp;<i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+                            <button type="button" id="addToBasketBtn2" class="addToBasketBtn" tabindex="6" onclick="myFunction('Red Onions', 24)">Add to basket&nbsp;<i class="fa fa-arrow-up" aria-hidden="true"></i></button>
                         </div>
 
                         <div class="product-card-child">
@@ -79,7 +79,7 @@
 
                         <div class="img-container">
                             <img src="Garlic-pic.jpg" alt="Pile of Garlic">
-                            <button type="button" id="addToBasketBtn3" class="addToBasketBtn" onclick="myFunction('Garlic', 9.6)">Add to basket&nbsp;<i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+                            <button type="button" id="addToBasketBtn3" class="addToBasketBtn" tabindex="7" onclick="myFunction('Garlic', 9.6)">Add to basket&nbsp;<i class="fa fa-arrow-up" aria-hidden="true"></i></button>
                         </div>
 
                         <div class="product-card-child">
@@ -94,7 +94,7 @@
 
                         <div class="img-container">
                             <img src="potato.jpg" alt="Pile of Potatoes'">
-                            <button type="button" id="addToBasketBtn4" class="addToBasketBtn" onclick="myFunction('Garlic', 32)">Add to basket&nbsp;<i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+                            <button type="button" id="addToBasketBtn4" class="addToBasketBtn" tabindex="8" onclick="myFunction('Garlic', 32)">Add to basket&nbsp;<i class="fa fa-arrow-up" aria-hidden="true"></i></button>
                         </div>
 
                         <div class="product-card-child">
@@ -109,7 +109,7 @@
 
                         <div class="img-container">
                             <img src="carrots.jpg" alt="Pile of Carrots'">
-                            <button type="button" id="addToBasketBtn5" class="addToBasketBtn" onclick="myFunction('Garlic', 48)">Add to basket&nbsp;<i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+                            <button type="button" id="addToBasketBtn5" class="addToBasketBtn" tabindex="9" onclick="myFunction('Garlic', 48)">Add to basket&nbsp;<i class="fa fa-arrow-up" aria-hidden="true"></i></button>
                         </div>
 
                         <div class="product-card-child">
@@ -125,7 +125,7 @@
 
                         <div class="img-container">
                             <img src="carrots.jpg" alt="Pile of Carrots'">
-                            <button type="button" id="addToBasketBtn6" class="addToBasketBtn" onclick="myFunction('Garlic', 48)">Add to basket&nbsp;<i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+                            <button type="button" id="addToBasketBtn6" class="addToBasketBtn" tabindex="x" onclick="myFunction('Garlic', 48)">Add to basket&nbsp;<i class="fa fa-arrow-up" aria-hidden="true"></i></button>
                         </div>
 
                         <div class="product-card-child">
@@ -142,13 +142,13 @@
 
             </section>
             
-            <section id="informationAndGuidance" class="wrapper">
-                <div class="informationAndGuidance-left">
+            <section id="informationAndGuidance" class="wrapper" tabindex="10">
+                <div class="informationAndGuidance-left" id="map-header-box">
                     <h2>SEE OUR PARTNERING FARMS</h2>
                 </div>
-                <div class="informationAndGuidance-right">
+                <div class="informationAndGuidance-right" id="map-box">
                     <div id="map-partnerFarms">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22396.855459154856!2d10.611130258850219!3d60.302903454033235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4641a30c3be67c59%3A0x94dbad789ad47bba!2sBraastad%20Gaard!5e0!3m2!1sno!2sno!4v1746774531659!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22396.855459154856!2d10.611130258850219!3d60.302903454033235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4641a30c3be67c59%3A0x94dbad789ad47bba!2sBraastad%20Gaard!5e0!3m2!1sno!2sno!4v1746774531659!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" tabindex="11"></iframe>
                     </div>
                     
                 </div>    
@@ -156,7 +156,7 @@
 
         </main>
 
-        <footer>
+        <footer tabindex="12">
             <h6 class="footer-heading">FRAM</h6>
             <div class="form-box">
                 
@@ -166,12 +166,12 @@
                 <form id="newsForm" action="/submit-form" method="post">
                     
                     <label for="form-first-name" hidden>First name:</label>
-                    <input type="text" id="formFirstname" name="form-firstName" required placeholder="First name">
+                    <input type="text" id="formFirstname" name="form-firstName" tabindex="13" required placeholder="First name">
                     
                     <label for="form-email" hidden>E-mail:</label>
-                    <input type="email" id="formEmail" name="form-email" required placeholder="E-mail adress">
+                    <input type="email" id="formEmail" name="form-email" tabindex="14" required placeholder="E-mail adress">
                     
-                    <button type="submit" id="submitBtn" class="submit-button">Send</button>
+                    <button type="submit" id="submitBtn" class="submit-button" tabindex="15">Send</button>
 
                 </form>
 

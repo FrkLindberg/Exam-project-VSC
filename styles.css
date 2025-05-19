@@ -10,6 +10,10 @@ main, footer, header {
     margin: 0 auto; /*center everything*/
 }
 
+main {
+    box-sizing: border-box;
+}
+
 /* ------------- Resets --------------- */
 
 h1, h2, h3, h4, h5, h6 { 
@@ -357,12 +361,13 @@ header nav ul li {
 
 @media (max-width: 1511px) {
     .informationAndGuidance-right {
-      flex-direction: column;
+      flex-direction: column !important;
       width: 100%;
       text-align: center;
       align-content: center;
       border-top: 1px solid black;
     }
+
     #map-partnerFarms { /* SLITER MED Å FÅ KARTET RESPONSIVT - MÅ FIKSES! */
         padding-top: 45px;
         padding-bottom: 45px;
@@ -370,6 +375,22 @@ header nav ul li {
         padding-left: 25px;
         flex: 1 1 100px;
     }
+
+    #map-box {
+        border-top: none;
+    }
+
+    #map-header-box {
+        border-bottom: 1px solid black;
+    }
+
+    .wrapper {
+        flex-direction: column !important;
+        width: 100%;
+        text-align: center;
+        align-content: center;
+    }
+
   }
 
 .informationAndGuidance-right-child {

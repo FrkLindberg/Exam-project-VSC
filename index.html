@@ -18,7 +18,7 @@
 
     <body>
 
-        <header>
+        <header tabindex="0">
 
             <div id="topnav-line">
                 <button id="openBtn" class="material-symbols-outlined" onclick="openNav()">&#xe5d2;</button>
@@ -27,9 +27,9 @@
             </div>
 
             <div id="mySidebar" class="sidebar">
-                <button id="closeBtn" href="javascript:void(0)" class="material-symbols-outlined" onclick="closeNav()">&#xe5cd;</button>
-                <a id="productNav" href="product-page.html">PRODUCTS</a>
-                <a id="chatNav" href="chatbot.html">CHAT</a>
+                <button id="closeBtn" href="javascript:void(0)" class="material-symbols-outlined" tabindex="19" onclick="closeNav()">&#xe5cd;</button>
+                <a id="productNav" href="product-page.html" tabindex="17">PRODUCTS</a>
+                <a id="chatNav" href="chatbot.html" tabindex="18">CHAT</a>
                 <a id="checkoutNav" href="checkout.html">CHECKOUT</a>
             </div>  
 
@@ -43,24 +43,24 @@
                     <h2 class="hero-text">HOME DELIVERY FROM YOUR LOCAL FARMS</h2>
             </section>
 
-            <section id="shortcut-display">
+            <section id="shortcut-display" tabindex="1">
                 <div class="shortcut-display-left">
                     <h2>SHOP OUR SEASONAL SELECTION</h2>
                     <h5>Updated every week</h5>
                     <img src="Mixed-produce.jpg" alt="Basket of mixed fresh produce from the farm">
                     <h5>New produce is added continuously as time goes by and the seasons change.</h5>
-                    <button type="button" class="red-button">Browse our section</button>
+                    <button type="button" class="red-button" tabindex="2">Browse our section</button>
                 </div>
                 <div class="shortcut-display-right">
                     <h2>ASK US ABOUT ANYTHING</h2>
                     <h5>All your questions answered</h5>
                     <img src="man-on-field.jpg" alt="Old man pointing out on a green field on the farm">
                     <h5>New produce is added continuously as time goes by and the seasons change.</h5>
-                    <button type="button" class="red-button">Go to chat</button>
+                    <button type="button" class="red-button" tabindex="3">Go to chat</button>
                 </div>
             </section>
 
-            <section id="informationAndGuidance">
+            <section id="informationAndGuidance" class="wrapper" tabindex="4">
                 <div class="informationAndGuidance-left">
                     <h2>THIS IS HOW IT WORKS</h2>
                 </div>
@@ -69,25 +69,25 @@
                         <h4>ORDER GROCERIES</h4>
                         <div class="text-link-container">
                             <p>Fram is a circular service that ensures your kitchen is always stocked with the essentials you need. Browse our seasonal selection, choose your items, and place your order online.</p>
-                            <a href="product-page.html">See our stock here</a>
+                            <a href="product-page.html" tabindex="5">See our stock here</a>
                         </div>
                     </div>
-                    <div class="informationAndGuidance-right-child">
+                    <div class="informationAndGuidance-right-child" tabindex="6">
                         <h4>STOCK UP</h4>
                         <p >Once your order arrives, unpack the produce and store it however it works best for you. Hold onto the containers—they’re yours to keep until your next order.</p>                        
                     </div>
-                    <div class="informationAndGuidance-right-child">
+                    <div class="informationAndGuidance-right-child" tabindex="7">
                         <h4>SCAN AND REORDER</h4>
                         <p>Ready for a refill? Grab the containers from your last order and scan the QR code with our app or your phone’s camera. This instantly adds the items back to your cart, making reordering a breeze.</h5>
                     </div>
-                    <div class="informationAndGuidance-right-child" id="child1">
+                    <div class="informationAndGuidance-right-child" id="child1" tabindex="8">
                         <h4>SWAP AND REUSE</h4>
                         <p>When we deliver your new order, simply leave your empty containers outside. We’ll pick them up, clean them thoroughly, and reuse them for future deliveries.</p>
                     </div>  
                 </div>
             </section>
 
-            <section id="most-popular-display">
+            <section id="most-popular-display" tabindex="9">
                 <h2>POPULAR PRODUCE</h2>
                 <div class="product-card-container">
                     
@@ -95,7 +95,7 @@
 
                         <div class="img-container">
                             <img src="Oats-pic.jpg" alt="Pile of Oats">
-                            <button type="button" id="addToBasketBtn1" class="addToBasketBtn" onclick="myFunction('Oats', 48)">Add to basket&nbsp;<i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+                            <button type="button" id="addToBasketBtn1" class="addToBasketBtn" tabindex="10" onclick="myFunction('Oats', 48)">Add to basket&nbsp;<i class="fa fa-arrow-up" aria-hidden="true"></i></button>
                         </div>
                         
                         <div class="product-card-child">
@@ -111,7 +111,7 @@
 
                         <div class="img-container">
                             <img src="Red-onion-pic.jpg" alt="Pile of Red Onions">
-                            <button type="button" id="addToBasketBtn2" class="addToBasketBtn" onclick="myFunction('Red Onions', 24)">Add to basket&nbsp;<i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+                            <button type="button" id="addToBasketBtn2" class="addToBasketBtn" tabindex="11" onclick="myFunction('Red Onions', 24)">Add to basket&nbsp;<i class="fa fa-arrow-up" aria-hidden="true"></i></button>
                         </div>
 
                         <div class="product-card-child">
@@ -126,7 +126,7 @@
 
                         <div class="img-container">
                             <img src="Garlic-pic.jpg" alt="Pile of Garlic">
-                            <button type="button" id="addToBasketBtn3" class="addToBasketBtn" onclick="myFunction('Garlic', 9.6)">Add to basket&nbsp;<i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+                            <button type="button" id="addToBasketBtn3" class="addToBasketBtn" tabindex="12" onclick="myFunction('Garlic', 9.6)">Add to basket&nbsp;<i class="fa fa-arrow-up" aria-hidden="true"></i></button>
                         </div>
 
                         <div class="product-card-child">
@@ -143,7 +143,7 @@
 
         </main>
 
-        <footer>
+        <footer tabindex="13">
             <h6 class="footer-heading">FRAM</h6>
             <div class="form-box">
                 
@@ -153,12 +153,12 @@
                 <form id="newsForm" action="/submit-form" method="post">
                     
                     <label for="form-first-name" hidden>First name:</label>
-                    <input type="text" id="formFirstname" name="form-firstName" required placeholder="First name">
+                    <input type="text" id="formFirstname" name="form-firstName" tabindex="14" required placeholder="First name">
                     
                     <label for="form-email" hidden>E-mail:</label>
-                    <input type="email" id="formEmail" name="form-email" required placeholder="E-mail adress">
+                    <input type="email" id="formEmail" name="form-email" tabindex="15" required placeholder="E-mail adress">
                     
-                    <button type="submit" id="submitBtn" class="submit-button">Send</button>
+                    <button type="submit" id="submitBtn" class="submit-button" tabindex="16">Send</button>
 
                 </form>
 
