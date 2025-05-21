@@ -43,6 +43,18 @@ async function getBotReply(userMessage) {
     }),
   });
 
+  if (!response.ok) {
+    throw new Error(`Servererror: ${response.status} ${response.statusText}`);
+  }
+
   const data = await response.json();
+  const botReply = data.choices[0].message.content;
+  visMelding("FRAM - Chatbot not working at this point, sorry for the trouble. Try again later", botReply);
+  
+ catch (error) {
+  console.error("Flaw during loading of answer:", error);
+  visMelding("FRAM", "Chatbot not working at this point, sorry for the trouble. Try again later");
+}
+
   return data.choices[0].message.content.trim();
 }
