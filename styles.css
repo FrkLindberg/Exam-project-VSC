@@ -427,8 +427,8 @@ section div div p, section div div a { /*Endre fra section til #informationAndGu
 }
 
 iframe {
-    width: 745px;
-    height: 478px;
+    width: 745px; /*calc(100%-264px);*/
+    height: 478px; /*calc(100%-180px);*/
 }
     
 /* --- Section - most popular display & Product page --- */
@@ -778,9 +778,9 @@ footer div h2 {
         padding-right: 32px;
     }
 
-    #map-partnerFarms {
-        width: calc(100%-50px);
-        height: calc(100%-90px)
+    iframe {
+        width: 340px; /*calc(100%-50px)*/
+        height: 459px; /*calc(100%-90px)*/
     }
 
     
