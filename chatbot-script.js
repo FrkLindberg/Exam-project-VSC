@@ -43,17 +43,20 @@ async function getBotReply(userMessage) {
     }),
   });
 
+
+  try {
+  const data = await response.json();
   if (!response.ok) {
     throw new Error(`Servererror: ${response.status} ${response.statusText}`);
   }
-
-  const data = await response.json();
   const botReply = data.choices[0].message.content;
-  visMelding("FRAM - Chatbot not working at this point, sorry for the trouble. Try again later", botReply);
-  
+  addMessage("FRAM - Chatbot not working at this point, sorry for the trouble. Try again later", botReply);
+  }
+
  catch (error) {
+  alert("Chatbot not working at this point, sorry for the trouble. Try again later")
   console.error("Flaw during loading of answer:", error);
-  visMelding("FRAM", "Chatbot not working at this point, sorry for the trouble. Try again later");
+  addMessage("FRAM", "Chatbot not working at this point, sorry for the trouble. Try again later");
 }
 
   return data.choices[0].message.content.trim();
