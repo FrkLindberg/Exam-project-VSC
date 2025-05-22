@@ -224,13 +224,21 @@ header nav ul li {
     border-radius: 50px;
     width: 47px;
     height: 36px;
-    text-align: center;
+    /*text-align: center;*/
     margin-right: 32px;
 }
 
-.cart-count span {
+.cart-number {
+    height: 36px;
     margin: 0px;
+    text-align: center;
+    align-content: center;
+    font-size: 14px;
 }
+
+/*.cart-count span {
+    margin: 0px;
+}*/
 
 /* -------------  INDEX-PAGE ------------- */
 
@@ -462,6 +470,10 @@ iframe {
 
 #produce-page-heading h4 {
     margin-top: 30px;
+}
+
+#product-card-produce_page h4 {
+    margin-left: 14px;
 }
 
 
