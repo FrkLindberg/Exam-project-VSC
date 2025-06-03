@@ -4,7 +4,7 @@ Creator:
 
 
 About the project: 
-  This is a exam-project in the subject "Fronend Essentials". The project description is as following: "A sustainable food delivery service in Norway connects customers with   fresh products from local farms. Customers can browse and order groceries online, with deliveries made directly to their homes from partner farms. The service emphasises sustainability and supporting local agriculture. Now, the company wants to enhance their online presence with a new webshop that highlights their commitment to   sustainability while making the ordering process easy and intuitive for customers."
+This is a exam-project in the subject "Fronend Essentials". The project description is as following: "A sustainable food delivery service in Norway connects customers with   fresh products from local farms. Customers can browse and order groceries online, with deliveries made directly to their homes from partner farms. The service emphasises sustainability and supporting local agriculture. Now, the company wants to enhance their online presence with a new webshop that highlights their commitment to   sustainability while making the ordering process easy and intuitive for customers."
 
 
 
