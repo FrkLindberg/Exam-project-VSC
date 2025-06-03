@@ -1,4 +1,4 @@
-/* ------- Globals ------- */
+/* ---------- GLOBALS --------- */
 body {
     background: #F7F2DE;
     font-size: 16px;
@@ -14,7 +14,12 @@ main {
     box-sizing: border-box;
 }
 
-/* ------------- Resets --------------- */
+img {
+    max-width: 100%;
+}
+
+
+/* ----------- RESETS ----------- */
 
 h1, h2, h3, h4, h5, h6 { 
     margin-block-start: 0; 
@@ -25,13 +30,13 @@ button {
     background: none;
     border: none;
     padding: 0;
-    font: inherit;      /* Fjerne? */
-    cursor: pointer;    /* Fjerne? */
-    outline: inherit;   /* Fjerne? */
+    font: inherit;      /* Can this be removed later? */
+    cursor: pointer;    /* Can this be removed later?*/
+    outline: inherit;   /* Can this be removed later? */
  }
 
 
-/* --------- Text -------- */
+/* --------- TEXT -------- */
 
 h1 { /*Logo tekst*/
     font-family: "Frank Ruhl Libre", serif;
@@ -72,14 +77,6 @@ h6 { /*Footer tekst*/
     color: #FFFFFF;
 }
 
-.white-text { /*Mulig å få lagt inn på en annen måte etterhvert, og fjerne*/
-    color: #FFFFFF;
-}
-
-.dark-text { /*Mulig å få lagt inn på en annen måte etterhvert, og fjerne*/
-    color: #1B1A1E;
-}
-
 p { /*Info text - body  */
     font-family: "Arimo", serif;
     font-size: 16px;
@@ -92,7 +89,8 @@ header h1 {
     font-size: 32px;
 }
 
-/* -------------  Buttons ------------- */
+
+/* -------------  BUTTONS ------------- */
 
 .red-button {
     background-color: #DC4131;
@@ -117,17 +115,10 @@ header h1 {
     width: 459px;
 } 
 
-.text-button {          /* Might delete later - ikke i bruk per d.d. */
-    font-size: 36px;
-} 
-
 #homeBtn {
     text-decoration: none;
 }
 
-img {
-    max-width: 100%;
-}
 
 /* -------------- HEADER -------------- */
 
@@ -136,7 +127,6 @@ header {
 }
 
 header h1 {
-    /*text-align: center;*/
     width: 100px;
 }
 
@@ -168,8 +158,8 @@ header nav ul li {
     background-color: #008F51;
     position: fixed;
     z-index: 1;
-    top: 0; /* FIX iht. Figma */
-    left: 0; /* FIX iht. Figma */
+    top: 0;
+    left: 0;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -179,20 +169,20 @@ header nav ul li {
     font-family: "Arimo", serif;
     font-size: 36px;
     color: #1B1A1E;
-    text-decoration: none; /* FIX iht. Figma */
-    padding: 8px 0px; /* FIX iht. Figma */
+    text-decoration: none;
+    padding: 8px 0px;
     display: block;
     transition: 0.3s;
     text-align: center;
 }
 
 .sidebar a:hover {
-    text-decoration: underline; /* FIX iht. Figma */
+    text-decoration: underline;
     flex: auto;
 }
 
 #openBtn {
-    font-size: 36px; /* Slå sammen med closeBtn */
+    font-size: 36px; /* Can be put together with closeBtn - fix later */
 }
 
 #openBtn:hover {
@@ -224,7 +214,6 @@ header nav ul li {
     border-radius: 50px;
     width: 47px;
     height: 36px;
-    /*text-align: center;*/
     margin-right: 32px;
 }
 
@@ -236,13 +225,8 @@ header nav ul li {
     font-size: 14px;
 }
 
-/*.cart-count span {
-    margin: 0px;
-}*/
 
-/* -------------  INDEX-PAGE ------------- */
-
-/*Hero-section*/
+/* ---------- HERO-SECTION (INDEX.HTML) ----------- */
 
 #hero-section {
     text-align: center;
@@ -257,8 +241,6 @@ header nav ul li {
     color: #FFFFFF;
     font-size: 200px;
     padding-top: 125px;
-/*  margin-block-start: 0;
-    margin-block-end: 0;*/  /*Flyttet til globals- resets, fjerne her*/
 }
 
 .vertical-line {
@@ -279,14 +261,13 @@ header nav ul li {
     border-bottom: 1px solid #FFFFFF;
 }
 
-/* --- Section - shortcut-display --- */
+
+/* --------- SECTION: SHORTCUT-DISPLAY (INDEX.HTML) --------- */
 
 #shortcut-display {
     display: flex;
     flex-direction: row;
     width: 100%;
-    /*height: 841px;*/
-    /*border-bottom: 1px solid black;*/
 }
 
 .shortcut-display-left, .shortcut-display-right {
@@ -316,8 +297,7 @@ header nav ul li {
 }
 
 
-
-/* --- Section - "how it works" AND "See our partnering farms" --- */
+/* ---------- SECTIONS: HOW IT WORKS (INDEX.HTML) & SEE OUR PARTNERING FARMS (PRODUCT-PAGE.HTML) --------- */
 
 #informationAndGuidance {
     display: flex;
@@ -329,37 +309,22 @@ header nav ul li {
 
 #informationAndGuidance div h2 {
     color: #1B1A1E;
-    /*padding-right: 80px;
-    padding-left: 80px;*/
-    /*padding: 1rem;
-    width: 377px;*/
     padding: 45px;
 }
 
 .informationAndGuidance-left {
     text-align: center;
-    align-content: center; /*Ev. legge inn på child?*/
-    /*border-top: 1px solid black;
-    border-right: 0.2px solid black;
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
-    width: 35%; /* 489px = ca. 31% */
+    align-content: center;
 }
 
 .informationAndGuidance-right {
-    /*border-top: 1px solid black;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;*/
     border-left: 1px solid black;
     width: 70%;
 }
 
 
 .informationAndGuidance-right-child {
-    /*width: 1020px;*/
-    /*height: 197px; */
     border-bottom: 1px solid black;
-    /*border-right: 1px solid black;*/
     padding-top: 45px;
     padding-bottom: 45px;
     padding-left: 90px;
@@ -369,11 +334,11 @@ header nav ul li {
     text-align: left;
 }
 
-#informationAndGuidance div div h4 { /*Endre fra section til #informationAndGuidance?*/
+#informationAndGuidance div div h4 {
     width: 278px;
 }
 
-#informationAndGuidance div div p, section div div a { /*Endre fra section til #informationAndGuidance?*/
+#informationAndGuidance div div p, section div div a {
     width: 414px;
 }
 
@@ -389,18 +354,19 @@ header nav ul li {
 }
 
 iframe {
-    width: 745px; /*calc(100%-264px);*/
-    height: 478px; /*calc(100%-180px);*/
+    width: 745px; /*if possible later = calc(100%-264px);*/
+    height: 478px; /*if possible later = calc(100%-180px);*/
 }
-    
-/* --- Section - most popular display & Product page --- */
+
+
+/* --------- SECTIONS: MOST POPULAR DISPLAY (INDEX.HTML) & PRODUCT PAGE (PRODUCT-PAGE.HTML) --------- */
 
 #shortcut-display, #most-popular-display {
     background: #ffffff;
 }
 
 #most-popular-display {
-    border: none; /* Fjerner jeg denne forsvinner padding på h2*/
+    border: none; /* Someting gets fucked with the padding at h2 if I remove this - fix later */
 }
 
 #most-popular-display h2 {
@@ -432,11 +398,11 @@ iframe {
     width: 100%; 
 }
 
-.addToBasketBtn {                   /* Flytt til knapper øverst */
-    background-color: #0B0A08;    /* Går igjen hos knapper, samle */
-    color: #FFFFFF;               /* Går igjen hos knapper, samle */
-    font-family: "Arimo", serif;    /* Går igjen hos knapper, samle */
-    font-size: 16px;                /* Går igjen hos knapper, samle */
+.addToBasketBtn {  /* Might be better to move to buttons later, some repeats */
+    background-color: #0B0A08;
+    color: #FFFFFF;
+    font-family: "Arimo", serif;
+    font-size: 16px;          
     height: 40px;
     width: 152px;
     border-radius: 44px;
@@ -478,7 +444,7 @@ iframe {
 }
 
 
-/* --- Footer --- */
+/* ---------- FOOTER ----------- */
 
 footer {
     background: #DC4131;
@@ -524,11 +490,12 @@ footer div h2 {
     color: #FFFFFF;
 }
 
-/*  ---- CHATBOT ----- */
+
+/*  ----------- CHATBOT.HTML ----------- */
 
 #chatbot-section {
     margin: 0;
-    background-image: url('Hero-pic-mountains.jpg'); /* Sett inn din bakgrunnsfil */
+    background-image: url('Hero-pic-mountains.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -580,7 +547,6 @@ footer div h2 {
   
 .chat-input-area {
     display: flex;
-    /*border-top: 1px solid #ddd;*/
     padding: 0.5rem;
     background-color: white;
     margin-bottom: 0;
@@ -614,7 +580,7 @@ footer div h2 {
 
 @media (max-width: 1511px) {
   #shortcut-display {
-        flex-direction: column;
+        flex-direction: column; /* Make row for a bit smaller screens - fix later */
         width: 100%;
   }
 
@@ -643,7 +609,7 @@ footer div h2 {
         border-top: 1px solid black;
     }
     
-    #map-partnerFarms { /* SLITER MED Å FÅ KARTET RESPONSIVT - MÅ FIKSES! */
+    #map-partnerFarms { /* Responsiveness of map could be improved - fix later */
         padding-top: 45px;
         padding-bottom: 45px;
         padding-right: 25px;
@@ -675,22 +641,6 @@ footer div h2 {
         align-items: start;
     }
 }
-
-/*@media (max-width: 1511px) {
-    #informationAndGuidance {
-      flex-direction: column;
-      max-width: 100vw;
-      text-align: center;
-      align-content: center;
-    }
-  }*/
-
-  /*@media (max-width: 755px) {
-  #shortcut-display div img {
-    border-radius: 16px;
-    margin: 44px 0px;
-  }
-}*/
 
 @media (max-width: 720px) {
     .sidebar {
@@ -826,118 +776,12 @@ footer div h2 {
     }
 
     iframe {
-        width: 340px; /*calc(100%-50px)*/
-        height: 459px; /*calc(100%-90px)*/
+        width: 340px; /*if possible later = calc(100%-50px)*/
+        height: 459px; /*if possible later = calc(100%-90px)*/
     }
 
     .chat-box {
         height: 400px;
     }
 
-/*    .chat-container {
-        width: 100vw;
-        max-width: 500px;
-        height: 100%;
-        border-radius: 0px;
-    }
-
-    .chat-box {
-        padding: 1rem;
-        height: 70vh;
-        overflow-y: auto;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-*/
-    
-
-   /* #most-popular-display div img, #product-display div img {
-        width: 250px; /*455px;*/
-        /*height: 321px;*/
-    /*
-
-    .addToBasketBtn {
-        bottom: 19px;
-        right: 55px;
-        position: absolute;
-    }
-*/
-    /*form input {
-        display: block;
-        margin-bottom: 16px;
-        width: 100%;
-        height: 44px;
-        font-size: 16px;
-        padding-block: 0px;
-        padding-inline: 0px;
-        border-width: 0px;
-        padding-left: 16px;
-        border-radius: 4px;
-    }*/
-
-
-
-
-
 }
-
-
-/* ----------- TRASH ---------------- */
-
-
-/*.stack-elements {
-    Display: block;
-}*/
-
-/*
-
-.picture-max {
-    max-width: 100%;
-}
-
-.hero-img {
-    top: 0px;
-    left: 0px;
-    max-width: 100%;
-}
-
-*/
-
-/*.main-content { /*Kopiert fra CodePen - wrap av content seksjon
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0 0 1em 0;
-    align-items: center;
-    justify-content: center;
-}*/
-
-/*.container { /*MIDLERTIDIG FIX - tekst over bilde header
-    position: relative;
-    text-align: center;
-    color: white;
-    max-height: 100%;
-}*/
-
-/*.centered { /*MIDLERTIDIG FIX - tekst over bilde header
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: block;
-}*/
-
-/*
-.footer-logo {
-    color: #FFFFFF !important;
-    font-size: 48px;
-}
-
-.footer-heading {
-    color: #FFFFFF;
-}
-*/
-
-/*margin: top right bottm left;*/
-/*line-height: linjeavstand*/

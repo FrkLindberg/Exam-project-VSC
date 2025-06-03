@@ -24,7 +24,7 @@ function addMessage(text, sender) {
 
 async function getBotReply(userMessage) {
   const endpoint = "https://api.openai.com/v1/chat/completions";
-  const apiKey = "YOUR_OPENAI_API_KEY"; // <<<< ERSTATT DENNE
+  const apiKey = "YOUR_OPENAI_API_KEY"; // <<<< REPLACE THIS
 
   const response = await fetch(endpoint, {
     method: "POST",
