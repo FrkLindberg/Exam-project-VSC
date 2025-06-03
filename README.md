@@ -51,19 +51,21 @@ Overview of the pages features:
 
  
 Contributing:
-- Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
-- If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star! Thanks again!
+- Feel free to contribute and make suggestions on how I could improve my project.
+- You can fork my repository and make a pull request, or open an issue with the tag "improvement" or whatever else you want to call it.
 
   Fork the Project:
-    - Create your Feature Branch (git checkout -b feature/AmazingFeature)
-    - Commit your Changes (git commit -m 'Add some AmazingFeature')
-    - Push to the Branch (git push origin feature/AmazingFeature)
-    - Open a Pull Request
+    - Fork the repository (wonder how? Google "how to fork a repository GitHub").
+    - Fix whatever you want.
+    - Submit a pull request to me (aka. the project owner).
 
-
-
-License:
-- Distributed under the project_license. See LICENSE.txt for more information.
 
 Contact:
 - Project Link: https://github.com/FrkLindberg/Exam-project-VSC
+
+
+If you want to, you can give my project a star to show your support on my journey.
+
+
+
+
