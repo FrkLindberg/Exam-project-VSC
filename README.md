@@ -24,7 +24,7 @@ For the sidebar-menu link "checkout" to work:
   1. Code the page "checout.html"
         - Remember to put in the code for the header with the sidebar
         - Remember to put in the footer (if it sounds like a good idea - if not, fuck it)
-  2. Change the html code for the link on all pages -> <a id="checkoutNav" href="PUT_IN: checkout.html">CHECKOUT</a>
+  2. Change the html code for the link on all the pages -> PUT IN TO THE NAV-ANCHOR:  id="checkoutNav" href="checkout.html">CHECKOUT
 
 
 
@@ -51,10 +51,8 @@ Overview of the pages features:
 
  
 Contributing:
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star! Thanks again!
+- Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+- If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star! Thanks again!
 
   Fork the Project:
     - Create your Feature Branch (git checkout -b feature/AmazingFeature)
@@ -65,7 +63,7 @@ If you have a suggestion that would make this better, please fork the repo and c
 
 
 License:
-Distributed under the project_license. See LICENSE.txt for more information.
+- Distributed under the project_license. See LICENSE.txt for more information.
 
 Contact:
-Project Link: https://github.com/FrkLindberg/Exam-project-VSC
+- Project Link: https://github.com/FrkLindberg/Exam-project-VSC
